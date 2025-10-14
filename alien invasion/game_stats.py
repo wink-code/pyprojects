@@ -7,7 +7,8 @@ class GameStats:
         self.settings = ai_game.settings
         self.reset_stats()
         self.game_active = False
-        self.high_score = 0
+        with open(self.settings.high_score_path) as f:
+            self.high_score = int(f.read())
 
     def reset_stats(self):
         """initialize the statistic that can change during the game"""

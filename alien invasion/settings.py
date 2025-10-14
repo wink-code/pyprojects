@@ -21,6 +21,7 @@ class Settings:
         self.speedup_scale = 1.1
         self.score_scale = 1.5
         self.initialize_dynamic_settings()
+        self.high_score_path = 'high_score.txt'
     
     def initialize_dynamic_settings(self):
         """initialize the setting that change throughout the game"""
